@@ -16,6 +16,9 @@
 		2CCA0CCA1ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CC91ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift */; };
 		2CCA0CCD1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */; };
 		2CCA0CCF1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */; };
+		2CCA0CD31ED21B12000287D3 /* NearbyPlacesListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */; };
+		2CCA0CD41ED21B12000287D3 /* NearbyPlacesListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CD21ED21B12000287D3 /* NearbyPlacesListViewCell.xib */; };
+		2CCA0CD71ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CD61ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		2CCA0CC91ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewPresenter.swift; sourceTree = "<group>"; };
 		2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewPresenterInterface.swift; sourceTree = "<group>"; };
 		2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewFactory.swift; sourceTree = "<group>"; };
+		2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewCell.swift; sourceTree = "<group>"; };
+		2CCA0CD21ED21B12000287D3 /* NearbyPlacesListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyPlacesListViewCell.xib; sourceTree = "<group>"; };
+		2CCA0CD61ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewCollectionLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,8 @@
 		2CCA0CC11ED20AAE000287D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2CCA0CD51ED21C9E000287D3 /* CollectionViewLayout */,
+				2CCA0CD01ED21AE6000287D3 /* CollectionViewCell */,
 				2CCA0CC61ED20B73000287D3 /* Interface */,
 				2CCA0CC41ED20B67000287D3 /* NearbyPlacesListView.swift */,
 			);
@@ -162,6 +170,23 @@
 				2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */,
 			);
 			name = Interface;
+			sourceTree = "<group>";
+		};
+		2CCA0CD01ED21AE6000287D3 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CD21ED21B12000287D3 /* NearbyPlacesListViewCell.xib */,
+				2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */,
+			);
+			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		2CCA0CD51ED21C9E000287D3 /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CD61ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift */,
+			);
+			name = CollectionViewLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CCA0CB41ED209E9000287D3 /* LaunchScreen.storyboard in Resources */,
+				2CCA0CD41ED21B12000287D3 /* NearbyPlacesListViewCell.xib in Resources */,
 				2CCA0CB11ED209E9000287D3 /* Assets.xcassets in Resources */,
 				2CCA0CAF1ED209E9000287D3 /* Main.storyboard in Resources */,
 			);
@@ -239,10 +265,12 @@
 			files = (
 				2CCA0CAA1ED209E9000287D3 /* AppDelegate.swift in Sources */,
 				2CCA0CC81ED20B82000287D3 /* NearbyPlacesListViewInterface.swift in Sources */,
+				2CCA0CD31ED21B12000287D3 /* NearbyPlacesListViewCell.swift in Sources */,
 				2CCA0CCF1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift in Sources */,
 				2CCA0CCA1ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift in Sources */,
 				2CCA0CC51ED20B67000287D3 /* NearbyPlacesListView.swift in Sources */,
 				2CCA0CCD1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift in Sources */,
+				2CCA0CD71ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +432,7 @@
 				2CCA0CBA1ED209E9000287D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

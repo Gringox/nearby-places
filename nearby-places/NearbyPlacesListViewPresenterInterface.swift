@@ -6,5 +6,7 @@
 //  Copyright © 2017 Pedro Luis Valdivieso. All rights reserved.
 //
 
-protocol NearbyPlacesListViewPresenterInterface {
+import UIKit
+
+protocol NearbyPlacesListViewPresenterInterface: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 }

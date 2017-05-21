@@ -11,11 +11,36 @@ import UIKit
 class NearbyPlacesListView: UIViewController, NearbyPlacesListViewInterface {
     
     var presenter: NearbyPlacesListViewPresenterInterface?
-
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         NearbyPlacesListViewFactory.initVIPERForNearbyPlacesListView(view: self)
+        
+        let cellNib: UINib = UINib.init(
+            nibName: String(describing: NearbyPlacesListViewCell.self),
+            bundle: nil
+        )
+        
+        self.collectionView.register(
+            cellNib,
+            forCellWithReuseIdentifier: String(describing: NearbyPlacesListViewCell.self)
+        )
+        
+        self.collectionView.delegate = self.presenter
+        self.collectionView.dataSource = self.presenter
+    }
+    
+    // MARK: - Getters
+    
+    func viewController() -> UIViewController {
+        return self;
+    }
+    
+    func getCollectionView() -> UICollectionView {
+        return self.collectionView;
     }
 
 }
