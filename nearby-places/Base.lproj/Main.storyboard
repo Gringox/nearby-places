@@ -20,13 +20,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZqU-pl-cSl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ub3-2Y-qPo">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nKS-mX-AHb">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZqU-pl-cSl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6fc-ta-nQM"/>
+                            <constraint firstItem="ZqU-pl-cSl" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="8FM-qO-oIC"/>
+                            <constraint firstAttribute="trailing" secondItem="ZqU-pl-cSl" secondAttribute="trailing" id="dM7-1p-bt8"/>
+                            <constraint firstItem="ZqU-pl-cSl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sJQ-K4-22S"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Nearby Places" id="d9B-Gu-HQq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="-544"/>
+            <point key="canvasLocation" x="1120.8" y="-544.67766116941539"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VAo-bP-Y02">
