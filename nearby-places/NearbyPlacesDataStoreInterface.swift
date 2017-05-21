@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol NearbyPlacesDataStoreInterface {
     
-    func loadPlaces(successCallback: @escaping () -> (),
-                    failureCallback: @escaping () -> ())
+    func loadPlacesForLocation(location: CLLocation,
+                               successCallback: @escaping () -> (),
+                               failureCallback: @escaping () -> ())
     
 }

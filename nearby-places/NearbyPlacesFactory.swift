@@ -10,8 +10,12 @@ import Foundation
 
 class NearbyPlacesFactory: NSObject {
     
-    class func initNearbyPlacesModule() -> NearbyPlacesDataStoreInterface {
+    class func initNearbyPlacesDataStore() -> NearbyPlacesDataStoreInterface {
         return NearbyPlacesDataStore()
+    }
+    
+    class func initNearbyPlacesInteractor() -> NearbyPlacesInteractorInterface {
+        return NearbyPlacesInteractor()
     }
 
 }

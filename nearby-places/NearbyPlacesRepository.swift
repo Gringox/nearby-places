@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import CoreLocation
 import Alamofire
 
 class NearbyPlacesRepository: NSObject {
     
-    class func loadPlaces(successCallback: @escaping () -> (),
-                          failureCallback: @escaping () -> ()) {
+    class func loadPlacesForLocation(location: CLLocation,
+                                     successCallback: @escaping () -> (),
+                                     failureCallback: @escaping () -> ()) {
         
         Alamofire.request("https://httpbin.org/get").validate().responseJSON { response in
             switch response.result {

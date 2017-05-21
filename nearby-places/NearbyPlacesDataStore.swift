@@ -7,18 +7,22 @@
 //
 
 import Foundation
+import CoreLocation
 
 class NearbyPlacesDataStore: NSObject, NearbyPlacesDataStoreInterface {
     
     var places : [NearbyPlacesEntity] = [NearbyPlacesEntity]()
     
-    internal func loadPlaces(successCallback: @escaping () -> (),
-                             failureCallback: @escaping () -> ()) {
+    internal func loadPlacesForLocation(location: CLLocation,
+                                        successCallback: @escaping () -> (),
+                                        failureCallback: @escaping () -> ()) {
         
         NearbyPlacesRepository.loadPlaces(successCallback: { 
             successCallback();
         }, failureCallback: failureCallback)
         
     }
+    
+//    private func
 
 }
