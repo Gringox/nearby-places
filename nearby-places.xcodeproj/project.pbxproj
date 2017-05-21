@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2CCA0CAA1ED209E9000287D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CA91ED209E9000287D3 /* AppDelegate.swift */; };
-		2CCA0CAC1ED209E9000287D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CAB1ED209E9000287D3 /* ViewController.swift */; };
 		2CCA0CAF1ED209E9000287D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CAD1ED209E9000287D3 /* Main.storyboard */; };
 		2CCA0CB11ED209E9000287D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CB01ED209E9000287D3 /* Assets.xcassets */; };
 		2CCA0CB41ED209E9000287D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CB21ED209E9000287D3 /* LaunchScreen.storyboard */; };
+		2CCA0CC51ED20B67000287D3 /* NearbyPlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CC41ED20B67000287D3 /* NearbyPlacesListView.swift */; };
+		2CCA0CC81ED20B82000287D3 /* NearbyPlacesListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CC71ED20B82000287D3 /* NearbyPlacesListViewInterface.swift */; };
+		2CCA0CCA1ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CC91ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift */; };
+		2CCA0CCD1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */; };
+		2CCA0CCF1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CCA0CA61ED209E9000287D3 /* nearby-places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nearby-places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA0CA91ED209E9000287D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CCA0CAB1ED209E9000287D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CCA0CAE1ED209E9000287D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CCA0CB01ED209E9000287D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CCA0CB31ED209E9000287D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CCA0CB51ED209E9000287D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CCA0CC41ED20B67000287D3 /* NearbyPlacesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListView.swift; sourceTree = "<group>"; };
+		2CCA0CC71ED20B82000287D3 /* NearbyPlacesListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewInterface.swift; sourceTree = "<group>"; };
+		2CCA0CC91ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewPresenter.swift; sourceTree = "<group>"; };
+		2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewPresenterInterface.swift; sourceTree = "<group>"; };
+		2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,106 @@
 		2CCA0CA81ED209E9000287D3 /* nearby-places */ = {
 			isa = PBXGroup;
 			children = (
+				2CCA0CBD1ED20A07000287D3 /* Utilities */,
+				2CCA0CBC1ED20A01000287D3 /* Modules */,
+				2CCA0CBB1ED209F9000287D3 /* Views */,
+				2CCA0CC01ED20A62000287D3 /* Resources */,
 				2CCA0CA91ED209E9000287D3 /* AppDelegate.swift */,
-				2CCA0CAB1ED209E9000287D3 /* ViewController.swift */,
-				2CCA0CAD1ED209E9000287D3 /* Main.storyboard */,
-				2CCA0CB01ED209E9000287D3 /* Assets.xcassets */,
-				2CCA0CB21ED209E9000287D3 /* LaunchScreen.storyboard */,
 				2CCA0CB51ED209E9000287D3 /* Info.plist */,
 			);
 			path = "nearby-places";
+			sourceTree = "<group>";
+		};
+		2CCA0CBB1ED209F9000287D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CB21ED209E9000287D3 /* LaunchScreen.storyboard */,
+				2CCA0CAD1ED209E9000287D3 /* Main.storyboard */,
+				2CCA0CBE1ED20A1A000287D3 /* List */,
+				2CCA0CBF1ED20A2B000287D3 /* Detail */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2CCA0CBC1ED20A01000287D3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		2CCA0CBD1ED20A07000287D3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		2CCA0CBE1ED20A1A000287D3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CC31ED20AB9000287D3 /* Factory */,
+				2CCA0CC21ED20AB3000287D3 /* Presenter */,
+				2CCA0CC11ED20AAE000287D3 /* View */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		2CCA0CBF1ED20A2B000287D3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		2CCA0CC01ED20A62000287D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CB01ED209E9000287D3 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2CCA0CC11ED20AAE000287D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CC61ED20B73000287D3 /* Interface */,
+				2CCA0CC41ED20B67000287D3 /* NearbyPlacesListView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2CCA0CC21ED20AB3000287D3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CCB1ED20E81000287D3 /* Interface */,
+				2CCA0CC91ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2CCA0CC31ED20AB9000287D3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		2CCA0CC61ED20B73000287D3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CC71ED20B82000287D3 /* NearbyPlacesListViewInterface.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2CCA0CCB1ED20E81000287D3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */,
+			);
+			name = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CCA0CAC1ED209E9000287D3 /* ViewController.swift in Sources */,
 				2CCA0CAA1ED209E9000287D3 /* AppDelegate.swift in Sources */,
+				2CCA0CC81ED20B82000287D3 /* NearbyPlacesListViewInterface.swift in Sources */,
+				2CCA0CCF1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift in Sources */,
+				2CCA0CCA1ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift in Sources */,
+				2CCA0CC51ED20B67000287D3 /* NearbyPlacesListView.swift in Sources */,
+				2CCA0CCD1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
