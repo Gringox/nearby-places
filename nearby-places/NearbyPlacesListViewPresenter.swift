@@ -11,6 +11,7 @@ import UIKit
 class NearbyPlacesListViewPresenter: NSObject, NearbyPlacesListViewPresenterInterface {
     
     var view: NearbyPlacesListViewInterface?
+    var dataStore: NearbyPlacesDataStoreInterface?
     
     fileprivate let sectionInsets = UIEdgeInsets(top: 30.0,
                                                  left: 10.0,

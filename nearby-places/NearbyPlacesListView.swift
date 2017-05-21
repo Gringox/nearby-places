@@ -35,11 +35,11 @@ class NearbyPlacesListView: UIViewController, NearbyPlacesListViewInterface {
     
     // MARK: - Getters
     
-    func viewController() -> UIViewController {
+    internal func viewController() -> UIViewController {
         return self;
     }
     
-    func getCollectionView() -> UICollectionView {
+    internal func getCollectionView() -> UICollectionView {
         return self.collectionView;
     }
 
