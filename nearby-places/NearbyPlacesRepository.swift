@@ -13,11 +13,13 @@ import Alamofire
 class NearbyPlacesRepository: NSObject {
     
     class func loadPlacesForLocation(location: CLLocation,
-                                     successCallback: @escaping ([NearbyPlacesEntity]) -> (),
+                                     nextPageToken: String?,
+                                     successCallback: @escaping ([NearbyPlacesEntity], String) -> (),
                                      failureCallback: @escaping () -> ()) {
         
         let url = NearbyPlacesRepository
-            .getURLWithQueryStringForLocation(location: location)
+            .getURLWithQueryStringForLocation(location: location,
+                                              nextPageToken: nextPageToken)
         
         Alamofire.request(url).validate().responseJSON { response in
             switch response.result {
@@ -34,7 +36,12 @@ class NearbyPlacesRepository: NSObject {
                         return failureCallback();
                     }
                     
-                    successCallback(places);
+                    if let token = json["next_page_token"] as! String? {
+                        successCallback(places, token)
+                    }else{
+                        successCallback(places, "")
+                    }
+                    
                 }else{
                     failureCallback();
                 }
@@ -45,7 +52,8 @@ class NearbyPlacesRepository: NSObject {
         
     }
     
-    private class func getURLWithQueryStringForLocation(location: CLLocation) -> String {
+    private class func getURLWithQueryStringForLocation(location: CLLocation,
+                                                        nextPageToken: String?) -> String {
         
         let apiKey = NearbyPlacesAppDefaults.API_KEY
         let apiUrl = NearbyPlacesAppDefaults.API_URL + "nearbysearch/json"
@@ -55,7 +63,9 @@ class NearbyPlacesRepository: NSObject {
         url = url + "&location=" + "\(location.coordinate.latitude)" + ","
         url = url + "\(location.coordinate.longitude)"
         
-        print("url: ", url)
+        if let token = nextPageToken as String? {
+            url = url + "&pagetoken=" + token
+        }
         
         return url
     }

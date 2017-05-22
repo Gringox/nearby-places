@@ -20,9 +20,13 @@ class NearbyPlacesListViewCell: UICollectionViewCell {
         
         self.nearbyPlaceLabel.text = place.name
         
-        self.nearbyPlaceImageView
-            .sd_setImage(with: URL(string: place.photoUrl!),
-                         placeholderImage: UIImage(named: "place.png"))
+        if let imageUrl = place.photoUrl as String? {
+            self.nearbyPlaceImageView
+                .sd_setImage(with: URL(string: imageUrl),
+                             placeholderImage: UIImage(named: "place.png"))
+        }else{
+            self.nearbyPlaceImageView.image = UIImage(named: "place.png")
+        }
     }
     
     // MARK: - UI Stuff
