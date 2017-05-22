@@ -18,10 +18,15 @@ class NearbyPlacesListViewFactory: NSObject {
         
         let presenter = NearbyPlacesListViewPresenter()
         presenter.view = view
+        presenter.router = NearbyPlacesListViewFactory.initRouter()
         presenter.dataStore = NearbyPlacesFactory.initNearbyPlacesDataStore()
         presenter.interactor = NearbyPlacesFactory.initNearbyPlacesInteractor()
         
         return presenter
+    }
+    
+    private class func initRouter() -> NearbyPlacesListViewRouterInterface {
+        return NearbyPlacesListViewRouter()
     }
 
 }

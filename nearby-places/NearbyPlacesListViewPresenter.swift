@@ -12,8 +12,11 @@ import CoreLocation
 class NearbyPlacesListViewPresenter: NSObject, NearbyPlacesListViewPresenterInterface {
     
     var view: NearbyPlacesListViewInterface?
+    var router: NearbyPlacesListViewRouterInterface?
     var dataStore: NearbyPlacesDataStoreInterface?
     var interactor: NearbyPlacesInteractorInterface?
+    
+    var location: CLLocation?
     
     fileprivate let sectionInsets = UIEdgeInsets(top: 30.0,
                                                  left: 10.0,
@@ -27,11 +30,16 @@ class NearbyPlacesListViewPresenter: NSObject, NearbyPlacesListViewPresenterInte
     internal func loadLocation() {
         
         let success = {(location: CLLocation) -> () in
-            self.loadNearbyPlacesFor(location: location)
+            self.location = location
+            self.loadNearbyPlacesForLocation()
         }
         
         let failure = {() -> () in
-            print("fallo")
+            let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+            alert.title = "Oops"
+            alert.message = "There was an error getting your location"
+            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            self.router?.presentVC(toVC: alert, fromVC: (self.view?.viewController())!)
         }
 
         self.interactor?.getCurrentLocation(successCallback: success,
@@ -39,19 +47,32 @@ class NearbyPlacesListViewPresenter: NSObject, NearbyPlacesListViewPresenterInte
     }
     
 
-    private func loadNearbyPlacesFor(location: CLLocation) {
+    private func loadNearbyPlacesForLocation() {
     
         let success = {() -> () in
             self.view?.getCollectionView().reloadData()
         }
         
         let failure = {() -> () in
-            print("fallo")
+            let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+            alert.title = "Oops"
+            alert.message = "There was an error loading google's places"
+            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            self.router?.presentVC(toVC: alert, fromVC: (self.view?.viewController())!)
         }
         
-        self.dataStore?.loadPlacesForLocation(location: location,
+        self.dataStore?.loadPlacesForLocation(location: self.location!,
                                               successCallback: success,
                                               failureCallback: failure)
+    }
+    
+    // MARK: - Utils
+    
+    private func paginate(itemNumber: Int) {
+        let currentNumberOfPlaces = (self.dataStore?.getNumberOfPlaces())!
+        if itemNumber == currentNumberOfPlaces - 1 {
+            self.loadNearbyPlacesForLocation()
+        }
     }
     
     // MARK: - Collection View DataSource
@@ -76,6 +97,8 @@ class NearbyPlacesListViewPresenter: NSObject, NearbyPlacesListViewPresenterInte
         let place = self.dataStore?.getPlaceAtIndex(index: indexPath.row)
         
         cell.initCellWithPlace(place: place!)
+        
+        self.paginate(itemNumber: indexPath.row)
         
         return cell
     }

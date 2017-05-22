@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA3F1FB1ED286A200797C99 /* NearbyPlacesListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3F1FA1ED286A200797C99 /* NearbyPlacesListViewRouter.swift */; };
+		2CA3F1FE1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3F1FD1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift */; };
 		2CCA0CAA1ED209E9000287D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CA91ED209E9000287D3 /* AppDelegate.swift */; };
 		2CCA0CAF1ED209E9000287D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CAD1ED209E9000287D3 /* Main.storyboard */; };
 		2CCA0CB11ED209E9000287D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CB01ED209E9000287D3 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		2CCA0CCF1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */; };
 		2CCA0CD31ED21B12000287D3 /* NearbyPlacesListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */; };
 		2CCA0CD41ED21B12000287D3 /* NearbyPlacesListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CD21ED21B12000287D3 /* NearbyPlacesListViewCell.xib */; };
-		2CCA0CD71ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CD61ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift */; };
 		2CCA0CDE1ED234DF000287D3 /* NearbyPlacesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CDD1ED234DF000287D3 /* NearbyPlacesDataStore.swift */; };
 		2CCA0CE21ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CE11ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift */; };
 		2CCA0CE41ED23542000287D3 /* NearbyPlacesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CE31ED23542000287D3 /* NearbyPlacesRepository.swift */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		0148072CCB51971D5DBFF0AA /* Pods-nearby-places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nearby-places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nearby-places/Pods-nearby-places.debug.xcconfig"; sourceTree = "<group>"; };
+		2CA3F1FA1ED286A200797C99 /* NearbyPlacesListViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewRouter.swift; sourceTree = "<group>"; };
+		2CA3F1FD1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewRouterInterface.swift; sourceTree = "<group>"; };
 		2CCA0CA61ED209E9000287D3 /* nearby-places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nearby-places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA0CA91ED209E9000287D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCA0CAE1ED209E9000287D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +49,6 @@
 		2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewFactory.swift; sourceTree = "<group>"; };
 		2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewCell.swift; sourceTree = "<group>"; };
 		2CCA0CD21ED21B12000287D3 /* NearbyPlacesListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyPlacesListViewCell.xib; sourceTree = "<group>"; };
-		2CCA0CD61ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewCollectionLayout.swift; sourceTree = "<group>"; };
 		2CCA0CDD1ED234DF000287D3 /* NearbyPlacesDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesDataStore.swift; sourceTree = "<group>"; };
 		2CCA0CE11ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesDataStoreInterface.swift; sourceTree = "<group>"; };
 		2CCA0CE31ED23542000287D3 /* NearbyPlacesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesRepository.swift; sourceTree = "<group>"; };
@@ -72,6 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA3F1F91ED2868A00797C99 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2CA3F1FC1ED286E000797C99 /* Interface */,
+				2CA3F1FA1ED286A200797C99 /* NearbyPlacesListViewRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		2CA3F1FC1ED286E000797C99 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2CA3F1FD1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
 		2CCA0C9D1ED209E8000287D3 = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +128,6 @@
 				2CCA0CB21ED209E9000287D3 /* LaunchScreen.storyboard */,
 				2CCA0CAD1ED209E9000287D3 /* Main.storyboard */,
 				2CCA0CBE1ED20A1A000287D3 /* List */,
-				2CCA0CBF1ED20A2B000287D3 /* Detail */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -134,17 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				2CCA0CC31ED20AB9000287D3 /* Factory */,
+				2CA3F1F91ED2868A00797C99 /* Router */,
 				2CCA0CC21ED20AB3000287D3 /* Presenter */,
 				2CCA0CC11ED20AAE000287D3 /* View */,
 			);
 			name = List;
-			sourceTree = "<group>";
-		};
-		2CCA0CBF1ED20A2B000287D3 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Detail;
 			sourceTree = "<group>";
 		};
 		2CCA0CC01ED20A62000287D3 /* Resources */ = {
@@ -159,7 +171,6 @@
 		2CCA0CC11ED20AAE000287D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2CCA0CD51ED21C9E000287D3 /* CollectionViewLayout */,
 				2CCA0CD01ED21AE6000287D3 /* CollectionViewCell */,
 				2CCA0CC61ED20B73000287D3 /* Interface */,
 				2CCA0CC41ED20B67000287D3 /* NearbyPlacesListView.swift */,
@@ -207,14 +218,6 @@
 				2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */,
 			);
 			name = CollectionViewCell;
-			sourceTree = "<group>";
-		};
-		2CCA0CD51ED21C9E000287D3 /* CollectionViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-				2CCA0CD61ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift */,
-			);
-			name = CollectionViewLayout;
 			sourceTree = "<group>";
 		};
 		2CCA0CD81ED23499000287D3 /* NearbyPlaces */ = {
@@ -448,8 +451,10 @@
 			files = (
 				2CCA0CEE1ED23CC4000287D3 /* NearbyPlacesInteractor.swift in Sources */,
 				2CCA0CE81ED23568000287D3 /* NearbyPlacesFactory.swift in Sources */,
+				2CA3F1FE1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift in Sources */,
 				2CCA0CAA1ED209E9000287D3 /* AppDelegate.swift in Sources */,
 				2CCA0CC81ED20B82000287D3 /* NearbyPlacesListViewInterface.swift in Sources */,
+				2CA3F1FB1ED286A200797C99 /* NearbyPlacesListViewRouter.swift in Sources */,
 				2CCA0CD31ED21B12000287D3 /* NearbyPlacesListViewCell.swift in Sources */,
 				2CCA0CF11ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift in Sources */,
 				2CCA0CCF1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift in Sources */,
@@ -461,7 +466,6 @@
 				2CCA0CEB1ED23824000287D3 /* NearbyPlacesAppDefaults.swift in Sources */,
 				2CCA0CCD1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift in Sources */,
 				2CCA0CE21ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift in Sources */,
-				2CCA0CD71ED21CEB000287D3 /* NearbyPlacesListViewCollectionLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

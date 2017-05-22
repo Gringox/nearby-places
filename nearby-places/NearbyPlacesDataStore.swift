@@ -13,16 +13,28 @@ class NearbyPlacesDataStore: NSObject, NearbyPlacesDataStoreInterface {
     
     var places : [NearbyPlacesEntity] = [NearbyPlacesEntity]()
     
+    var nextPageToken: String?
+    
     // MARK: - Services
     
     internal func loadPlacesForLocation(location: CLLocation,
                                         successCallback: @escaping () -> (),
                                         failureCallback: @escaping () -> ()) {
         
-        NearbyPlacesRepository.loadPlacesForLocation(location: location,
-        successCallback: { (places) in
-            self.places = places
+        if let token = self.nextPageToken as String? {
+            if token == "" {
+                return successCallback()
+            }
+        }
+        
+        NearbyPlacesRepository.loadPlacesForLocation(
+        location: location,
+        nextPageToken: self.nextPageToken,
+        successCallback: { (places, nextPageToken) in
+            self.nextPageToken = nextPageToken
+            self.places.append(contentsOf: places)
             successCallback()
+            
         }, failureCallback: failureCallback)
     }
     
