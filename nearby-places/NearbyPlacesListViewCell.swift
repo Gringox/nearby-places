@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class NearbyPlacesListViewCell: UICollectionViewCell {
     
@@ -19,9 +20,9 @@ class NearbyPlacesListViewCell: UICollectionViewCell {
         
         self.nearbyPlaceLabel.text = place.name
         
-//        self.nearbyPlaceImageView.image = UIImage.init(named: "place.png")
-        
-        self.nearbyPlaceImageView.downloadedFrom(link: place.photoUrl!)
+        self.nearbyPlaceImageView
+            .sd_setImage(with: URL(string: place.photoUrl!),
+                         placeholderImage: UIImage(named: "place.png"))
     }
     
     // MARK: - UI Stuff

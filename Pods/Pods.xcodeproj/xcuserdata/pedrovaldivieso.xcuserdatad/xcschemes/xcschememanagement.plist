@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>SwiftLocation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -32,12 +37,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2A5E8911287AEAD076289B662C0B2FC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38292A794D2FF5E8BDD02EAA076DD9EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6CAED59799D3B5603F157AF9DFCE122F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>924FBB60777AFF014F17B0377C6181BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
