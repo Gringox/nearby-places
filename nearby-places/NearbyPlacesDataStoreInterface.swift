@@ -15,4 +15,8 @@ protocol NearbyPlacesDataStoreInterface {
                                successCallback: @escaping () -> (),
                                failureCallback: @escaping () -> ())
     
+    func getNumberOfPlaces() -> Int
+    
+    func getPlaceAtIndex(index: Int) -> NearbyPlacesEntity
+    
 }

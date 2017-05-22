@@ -9,5 +9,48 @@
 import Foundation
 
 class NearbyPlacesEntity: NSObject {
+    
+    var name: String?
+    var photoUrl: String?
+    
+    class func initPlaceFrom(name placeName: String,
+                             usingPhotos photos: [[String:Any]]) -> NearbyPlacesEntity? {
+        
+        let place: NearbyPlacesEntity = NearbyPlacesEntity()
+        
+        place.name = placeName
+        
+        guard let photoReference = photos[0]["photo_reference"] as! String? else {
+            return nil
+        }
+        
+        var photoUrl = NearbyPlacesAppDefaults.API_URL + "photo?"
+        photoUrl = photoUrl + "maxwidth=400&maxheight=400"
+        photoUrl = photoUrl + "&photoreference=" + photoReference
+        photoUrl = photoUrl + "&key=" + NearbyPlacesAppDefaults.API_KEY
+        place.photoUrl = photoUrl
+        
+        return place
+    }
+    
+    class func initPlacesFromPlacesArray(
+        placesRawArray: [[String:Any]]) -> [NearbyPlacesEntity]? {
+    
+        var places: [NearbyPlacesEntity] = [NearbyPlacesEntity]()
+        
+        for rawPlace in placesRawArray {
+            
+            guard let name = rawPlace["name"] as! String? else { return nil }
+            guard let photos = rawPlace["photos"] as! [[String:Any]]? else { return nil }
+            guard let place = NearbyPlacesEntity.initPlaceFrom(name: name,
+                                                               usingPhotos: photos) else {
+                return nil
+            }
+            places.append(place)
+            
+        }
+        
+        return places
+    }
 
 }

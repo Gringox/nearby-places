@@ -12,6 +12,19 @@ class NearbyPlacesListViewCell: UICollectionViewCell {
     
     @IBOutlet weak var nearbyPlaceImageView: UIImageView!
     @IBOutlet weak var nearbyPlaceLabel: UILabel!
+    
+    // MARK: - Initializer
+    
+    func initCellWithPlace(place: NearbyPlacesEntity) {
+        
+        self.nearbyPlaceLabel.text = place.name
+        
+//        self.nearbyPlaceImageView.image = UIImage.init(named: "place.png")
+        
+        self.nearbyPlaceImageView.downloadedFrom(link: place.photoUrl!)
+    }
+    
+    // MARK: - UI Stuff
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.alpha = 0.5;

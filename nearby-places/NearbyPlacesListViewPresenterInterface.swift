@@ -9,4 +9,7 @@
 import UIKit
 
 protocol NearbyPlacesListViewPresenterInterface: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func loadLocation()
+    
 }

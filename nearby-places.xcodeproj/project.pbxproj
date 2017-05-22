@@ -27,6 +27,8 @@
 		2CCA0CEB1ED23824000287D3 /* NearbyPlacesAppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CEA1ED23824000287D3 /* NearbyPlacesAppDefaults.swift */; };
 		2CCA0CEE1ED23CC4000287D3 /* NearbyPlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CED1ED23CC4000287D3 /* NearbyPlacesInteractor.swift */; };
 		2CCA0CF11ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CF01ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift */; };
+		2CCA0CF41ED269FE000287D3 /* place.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CF31ED269FD000287D3 /* place.png */; };
+		2CCA0CF71ED26F7A000287D3 /* UIImageView+URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CF61ED26F7A000287D3 /* UIImageView+URLImage.swift */; };
 		A14AE67D11A055CCC417861D /* Pods_nearby_places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6751960599811A84DFE47F9D /* Pods_nearby_places.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		2CCA0CEA1ED23824000287D3 /* NearbyPlacesAppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesAppDefaults.swift; sourceTree = "<group>"; };
 		2CCA0CED1ED23CC4000287D3 /* NearbyPlacesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesInteractor.swift; sourceTree = "<group>"; };
 		2CCA0CF01ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesInteractorInterface.swift; sourceTree = "<group>"; };
+		2CCA0CF31ED269FD000287D3 /* place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = place.png; sourceTree = "<group>"; };
+		2CCA0CF61ED26F7A000287D3 /* UIImageView+URLImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URLImage.swift"; sourceTree = "<group>"; };
 		6751960599811A84DFE47F9D /* Pods_nearby_places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nearby_places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F5F87A35555E87770DDCCF /* Pods-nearby-places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nearby-places.release.xcconfig"; path = "Pods/Target Support Files/Pods-nearby-places/Pods-nearby-places.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,7 @@
 		2CCA0CBD1ED20A07000287D3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2CCA0CF51ED26F5C000287D3 /* Image Extension */,
 				2CCA0CE91ED23806000287D3 /* AppDefaults */,
 			);
 			name = Utilities;
@@ -148,6 +153,7 @@
 		2CCA0CC01ED20A62000287D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2CCA0CF21ED269EF000287D3 /* Images */,
 				2CCA0CB01ED209E9000287D3 /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -292,6 +298,22 @@
 			name = Interface;
 			sourceTree = "<group>";
 		};
+		2CCA0CF21ED269EF000287D3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CF31ED269FD000287D3 /* place.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2CCA0CF51ED26F5C000287D3 /* Image Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CF61ED26F7A000287D3 /* UIImageView+URLImage.swift */,
+			);
+			name = "Image Extension";
+			sourceTree = "<group>";
+		};
 		45C8C70DC48518ED504E98BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +396,7 @@
 			files = (
 				2CCA0CB41ED209E9000287D3 /* LaunchScreen.storyboard in Resources */,
 				2CCA0CD41ED21B12000287D3 /* NearbyPlacesListViewCell.xib in Resources */,
+				2CCA0CF41ED269FE000287D3 /* place.png in Resources */,
 				2CCA0CB11ED209E9000287D3 /* Assets.xcassets in Resources */,
 				2CCA0CAF1ED209E9000287D3 /* Main.storyboard in Resources */,
 			);
@@ -437,6 +460,7 @@
 				2CCA0CEE1ED23CC4000287D3 /* NearbyPlacesInteractor.swift in Sources */,
 				2CCA0CE81ED23568000287D3 /* NearbyPlacesFactory.swift in Sources */,
 				2CCA0CAA1ED209E9000287D3 /* AppDelegate.swift in Sources */,
+				2CCA0CF71ED26F7A000287D3 /* UIImageView+URLImage.swift in Sources */,
 				2CCA0CC81ED20B82000287D3 /* NearbyPlacesListViewInterface.swift in Sources */,
 				2CCA0CD31ED21B12000287D3 /* NearbyPlacesListViewCell.swift in Sources */,
 				2CCA0CF11ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift in Sources */,

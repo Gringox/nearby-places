@@ -10,5 +10,6 @@ import Foundation
 import CoreLocation
 
 protocol NearbyPlacesInteractorInterface: CLLocationManagerDelegate {
-    func getLocation() -> CLLocation;
+    func getCurrentLocation(successCallback: @escaping (CLLocation) -> (),
+                            failureCallback: @escaping () -> ())
 }

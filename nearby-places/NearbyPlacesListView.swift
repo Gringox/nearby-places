@@ -31,6 +31,8 @@ class NearbyPlacesListView: UIViewController, NearbyPlacesListViewInterface {
         
         self.collectionView.delegate = self.presenter
         self.collectionView.dataSource = self.presenter
+        
+        self.presenter?.loadLocation()
     }
     
     // MARK: - Getters

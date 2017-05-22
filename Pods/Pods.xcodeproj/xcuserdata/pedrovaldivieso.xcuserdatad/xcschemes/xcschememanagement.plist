@@ -9,20 +9,55 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods-nearby-places.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>SwiftLocation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0AB1EECDF448033E6CBC0A07511F1B97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6CAED59799D3B5603F157AF9DFCE122F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A237A2955A0D56CCD7C68F08FBF4E2EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B26AF2CA4F4F16EDA838CCA6BB4F94F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B73BCBA2606C8197ABC772AB889DF679</key>
 		<dict>
 			<key>primary</key>
 			<true/>

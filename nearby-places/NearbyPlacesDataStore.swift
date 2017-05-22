@@ -13,16 +13,27 @@ class NearbyPlacesDataStore: NSObject, NearbyPlacesDataStoreInterface {
     
     var places : [NearbyPlacesEntity] = [NearbyPlacesEntity]()
     
+    // MARK: - Services
+    
     internal func loadPlacesForLocation(location: CLLocation,
                                         successCallback: @escaping () -> (),
                                         failureCallback: @escaping () -> ()) {
         
-        NearbyPlacesRepository.loadPlaces(successCallback: { 
-            successCallback();
+        NearbyPlacesRepository.loadPlacesForLocation(location: location,
+        successCallback: { (places) in
+            self.places = places
+            successCallback()
         }, failureCallback: failureCallback)
-        
     }
     
-//    private func
-
+    // MARK: - DataStore
+    
+    internal func getNumberOfPlaces() -> Int {
+        return self.places.count
+    }
+    
+    internal func getPlaceAtIndex(index: Int) -> NearbyPlacesEntity {
+        return self.places[index]
+    }
+    
 }
