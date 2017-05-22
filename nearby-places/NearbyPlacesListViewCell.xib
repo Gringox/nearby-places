@@ -22,14 +22,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                     </imageView>
                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSI-H1-Jjd">
-                        <rect key="frame" x="0.0" y="179" width="200" height="21"/>
+                        <rect key="frame" x="0.0" y="158" width="200" height="42"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="OMG-sw-pOd"/>
+                            <constraint firstAttribute="height" constant="42" id="OMG-sw-pOd"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AkG-62-kFV">
-                        <rect key="frame" x="4" y="179" width="192" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AkG-62-kFV">
+                        <rect key="frame" x="4" y="158" width="192" height="42"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -46,6 +46,7 @@
                 <constraint firstItem="sc5-e6-Nxg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Q6a-fw-BII"/>
                 <constraint firstItem="AkG-62-kFV" firstAttribute="leading" secondItem="aSI-H1-Jjd" secondAttribute="leading" constant="4" id="SRf-9P-PnH"/>
                 <constraint firstItem="AkG-62-kFV" firstAttribute="trailing" secondItem="aSI-H1-Jjd" secondAttribute="trailing" constant="-4" id="k10-Ww-Ogi"/>
+                <constraint firstAttribute="bottom" secondItem="AkG-62-kFV" secondAttribute="bottom" id="rsp-F7-FK4"/>
                 <constraint firstItem="aSI-H1-Jjd" firstAttribute="trailing" secondItem="sc5-e6-Nxg" secondAttribute="trailing" id="sfq-SB-0hb"/>
                 <constraint firstAttribute="bottom" secondItem="sc5-e6-Nxg" secondAttribute="bottom" id="wV5-nj-R0W"/>
             </constraints>
