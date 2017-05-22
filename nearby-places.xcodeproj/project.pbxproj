@@ -7,21 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA3F1FB1ED286A200797C99 /* NearbyPlacesListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3F1FA1ED286A200797C99 /* NearbyPlacesListViewRouter.swift */; };
+		2CA3F1FE1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3F1FD1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift */; };
 		2CCA0CAA1ED209E9000287D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CA91ED209E9000287D3 /* AppDelegate.swift */; };
-		2CCA0CAC1ED209E9000287D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CAB1ED209E9000287D3 /* ViewController.swift */; };
 		2CCA0CAF1ED209E9000287D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CAD1ED209E9000287D3 /* Main.storyboard */; };
 		2CCA0CB11ED209E9000287D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CB01ED209E9000287D3 /* Assets.xcassets */; };
 		2CCA0CB41ED209E9000287D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CB21ED209E9000287D3 /* LaunchScreen.storyboard */; };
+		2CCA0CC51ED20B67000287D3 /* NearbyPlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CC41ED20B67000287D3 /* NearbyPlacesListView.swift */; };
+		2CCA0CC81ED20B82000287D3 /* NearbyPlacesListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CC71ED20B82000287D3 /* NearbyPlacesListViewInterface.swift */; };
+		2CCA0CCA1ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CC91ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift */; };
+		2CCA0CCD1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */; };
+		2CCA0CCF1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */; };
+		2CCA0CD31ED21B12000287D3 /* NearbyPlacesListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */; };
+		2CCA0CD41ED21B12000287D3 /* NearbyPlacesListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CD21ED21B12000287D3 /* NearbyPlacesListViewCell.xib */; };
+		2CCA0CDE1ED234DF000287D3 /* NearbyPlacesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CDD1ED234DF000287D3 /* NearbyPlacesDataStore.swift */; };
+		2CCA0CE21ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CE11ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift */; };
+		2CCA0CE41ED23542000287D3 /* NearbyPlacesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CE31ED23542000287D3 /* NearbyPlacesRepository.swift */; };
+		2CCA0CE61ED23559000287D3 /* NearbyPlacesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CE51ED23559000287D3 /* NearbyPlacesEntity.swift */; };
+		2CCA0CE81ED23568000287D3 /* NearbyPlacesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CE71ED23568000287D3 /* NearbyPlacesFactory.swift */; };
+		2CCA0CEB1ED23824000287D3 /* NearbyPlacesAppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CEA1ED23824000287D3 /* NearbyPlacesAppDefaults.swift */; };
+		2CCA0CEE1ED23CC4000287D3 /* NearbyPlacesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CED1ED23CC4000287D3 /* NearbyPlacesInteractor.swift */; };
+		2CCA0CF11ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA0CF01ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift */; };
+		2CCA0CF41ED269FE000287D3 /* place.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CCA0CF31ED269FD000287D3 /* place.png */; };
+		A14AE67D11A055CCC417861D /* Pods_nearby_places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6751960599811A84DFE47F9D /* Pods_nearby_places.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0148072CCB51971D5DBFF0AA /* Pods-nearby-places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nearby-places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nearby-places/Pods-nearby-places.debug.xcconfig"; sourceTree = "<group>"; };
+		2CA3F1FA1ED286A200797C99 /* NearbyPlacesListViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewRouter.swift; sourceTree = "<group>"; };
+		2CA3F1FD1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewRouterInterface.swift; sourceTree = "<group>"; };
 		2CCA0CA61ED209E9000287D3 /* nearby-places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nearby-places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCA0CA91ED209E9000287D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CCA0CAB1ED209E9000287D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CCA0CAE1ED209E9000287D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CCA0CB01ED209E9000287D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CCA0CB31ED209E9000287D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CCA0CB51ED209E9000287D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CCA0CC41ED20B67000287D3 /* NearbyPlacesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListView.swift; sourceTree = "<group>"; };
+		2CCA0CC71ED20B82000287D3 /* NearbyPlacesListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewInterface.swift; sourceTree = "<group>"; };
+		2CCA0CC91ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewPresenter.swift; sourceTree = "<group>"; };
+		2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewPresenterInterface.swift; sourceTree = "<group>"; };
+		2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewFactory.swift; sourceTree = "<group>"; };
+		2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesListViewCell.swift; sourceTree = "<group>"; };
+		2CCA0CD21ED21B12000287D3 /* NearbyPlacesListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyPlacesListViewCell.xib; sourceTree = "<group>"; };
+		2CCA0CDD1ED234DF000287D3 /* NearbyPlacesDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesDataStore.swift; sourceTree = "<group>"; };
+		2CCA0CE11ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesDataStoreInterface.swift; sourceTree = "<group>"; };
+		2CCA0CE31ED23542000287D3 /* NearbyPlacesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesRepository.swift; sourceTree = "<group>"; };
+		2CCA0CE51ED23559000287D3 /* NearbyPlacesEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesEntity.swift; sourceTree = "<group>"; };
+		2CCA0CE71ED23568000287D3 /* NearbyPlacesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesFactory.swift; sourceTree = "<group>"; };
+		2CCA0CEA1ED23824000287D3 /* NearbyPlacesAppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesAppDefaults.swift; sourceTree = "<group>"; };
+		2CCA0CED1ED23CC4000287D3 /* NearbyPlacesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesInteractor.swift; sourceTree = "<group>"; };
+		2CCA0CF01ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesInteractorInterface.swift; sourceTree = "<group>"; };
+		2CCA0CF31ED269FD000287D3 /* place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = place.png; sourceTree = "<group>"; };
+		6751960599811A84DFE47F9D /* Pods_nearby_places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nearby_places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F5F87A35555E87770DDCCF /* Pods-nearby-places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nearby-places.release.xcconfig"; path = "Pods/Target Support Files/Pods-nearby-places/Pods-nearby-places.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +67,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14AE67D11A055CCC417861D /* Pods_nearby_places.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA3F1F91ED2868A00797C99 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2CA3F1FC1ED286E000797C99 /* Interface */,
+				2CA3F1FA1ED286A200797C99 /* NearbyPlacesListViewRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		2CA3F1FC1ED286E000797C99 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2CA3F1FD1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
 		2CCA0C9D1ED209E8000287D3 = {
 			isa = PBXGroup;
 			children = (
 				2CCA0CA81ED209E9000287D3 /* nearby-places */,
 				2CCA0CA71ED209E9000287D3 /* Products */,
+				45C8C70DC48518ED504E98BE /* Pods */,
+				728A3B73F9F0050BAE7D51E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +112,215 @@
 		2CCA0CA81ED209E9000287D3 /* nearby-places */ = {
 			isa = PBXGroup;
 			children = (
+				2CCA0CBD1ED20A07000287D3 /* Utilities */,
+				2CCA0CBC1ED20A01000287D3 /* Modules */,
+				2CCA0CBB1ED209F9000287D3 /* Views */,
+				2CCA0CC01ED20A62000287D3 /* Resources */,
 				2CCA0CA91ED209E9000287D3 /* AppDelegate.swift */,
-				2CCA0CAB1ED209E9000287D3 /* ViewController.swift */,
-				2CCA0CAD1ED209E9000287D3 /* Main.storyboard */,
-				2CCA0CB01ED209E9000287D3 /* Assets.xcassets */,
-				2CCA0CB21ED209E9000287D3 /* LaunchScreen.storyboard */,
 				2CCA0CB51ED209E9000287D3 /* Info.plist */,
 			);
 			path = "nearby-places";
+			sourceTree = "<group>";
+		};
+		2CCA0CBB1ED209F9000287D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CB21ED209E9000287D3 /* LaunchScreen.storyboard */,
+				2CCA0CAD1ED209E9000287D3 /* Main.storyboard */,
+				2CCA0CBE1ED20A1A000287D3 /* List */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2CCA0CBC1ED20A01000287D3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CD81ED23499000287D3 /* NearbyPlaces */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		2CCA0CBD1ED20A07000287D3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CE91ED23806000287D3 /* AppDefaults */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		2CCA0CBE1ED20A1A000287D3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CC31ED20AB9000287D3 /* Factory */,
+				2CA3F1F91ED2868A00797C99 /* Router */,
+				2CCA0CC21ED20AB3000287D3 /* Presenter */,
+				2CCA0CC11ED20AAE000287D3 /* View */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		2CCA0CC01ED20A62000287D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CF21ED269EF000287D3 /* Images */,
+				2CCA0CB01ED209E9000287D3 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2CCA0CC11ED20AAE000287D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CD01ED21AE6000287D3 /* CollectionViewCell */,
+				2CCA0CC61ED20B73000287D3 /* Interface */,
+				2CCA0CC41ED20B67000287D3 /* NearbyPlacesListView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2CCA0CC21ED20AB3000287D3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CCB1ED20E81000287D3 /* Interface */,
+				2CCA0CC91ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2CCA0CC31ED20AB9000287D3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CCE1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		2CCA0CC61ED20B73000287D3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CC71ED20B82000287D3 /* NearbyPlacesListViewInterface.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2CCA0CCB1ED20E81000287D3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CCC1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2CCA0CD01ED21AE6000287D3 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CD21ED21B12000287D3 /* NearbyPlacesListViewCell.xib */,
+				2CCA0CD11ED21B12000287D3 /* NearbyPlacesListViewCell.swift */,
+			);
+			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		2CCA0CD81ED23499000287D3 /* NearbyPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CDC1ED234C0000287D3 /* Factory */,
+				2CCA0CDB1ED234BB000287D3 /* Entity */,
+				2CCA0CDA1ED234B0000287D3 /* Repository */,
+				2CCA0CD91ED234A7000287D3 /* DataStore */,
+				2CCA0CEC1ED23C96000287D3 /* Interactor */,
+			);
+			name = NearbyPlaces;
+			sourceTree = "<group>";
+		};
+		2CCA0CD91ED234A7000287D3 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CDF1ED234E4000287D3 /* Interface */,
+				2CCA0CDD1ED234DF000287D3 /* NearbyPlacesDataStore.swift */,
+			);
+			name = DataStore;
+			sourceTree = "<group>";
+		};
+		2CCA0CDA1ED234B0000287D3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CE31ED23542000287D3 /* NearbyPlacesRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		2CCA0CDB1ED234BB000287D3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CE51ED23559000287D3 /* NearbyPlacesEntity.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		2CCA0CDC1ED234C0000287D3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CE71ED23568000287D3 /* NearbyPlacesFactory.swift */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		2CCA0CDF1ED234E4000287D3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CE11ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2CCA0CE91ED23806000287D3 /* AppDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CEA1ED23824000287D3 /* NearbyPlacesAppDefaults.swift */,
+			);
+			name = AppDefaults;
+			sourceTree = "<group>";
+		};
+		2CCA0CEC1ED23C96000287D3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CEF1ED23D71000287D3 /* Interface */,
+				2CCA0CED1ED23CC4000287D3 /* NearbyPlacesInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		2CCA0CEF1ED23D71000287D3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CF01ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2CCA0CF21ED269EF000287D3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2CCA0CF31ED269FD000287D3 /* place.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		45C8C70DC48518ED504E98BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0148072CCB51971D5DBFF0AA /* Pods-nearby-places.debug.xcconfig */,
+				C5F5F87A35555E87770DDCCF /* Pods-nearby-places.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		728A3B73F9F0050BAE7D51E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6751960599811A84DFE47F9D /* Pods_nearby_places.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +330,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CCA0CB81ED209E9000287D3 /* Build configuration list for PBXNativeTarget "nearby-places" */;
 			buildPhases = (
+				B63DF0CAD7AB9832938C32EF /* [CP] Check Pods Manifest.lock */,
 				2CCA0CA21ED209E8000287D3 /* Sources */,
 				2CCA0CA31ED209E8000287D3 /* Frameworks */,
 				2CCA0CA41ED209E8000287D3 /* Resources */,
+				3DF116A5C8FE395A19507D94 /* [CP] Embed Pods Frameworks */,
+				26C9FEF637007AAFB404448A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +387,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CCA0CB41ED209E9000287D3 /* LaunchScreen.storyboard in Resources */,
+				2CCA0CD41ED21B12000287D3 /* NearbyPlacesListViewCell.xib in Resources */,
+				2CCA0CF41ED269FE000287D3 /* place.png in Resources */,
 				2CCA0CB11ED209E9000287D3 /* Assets.xcassets in Resources */,
 				2CCA0CAF1ED209E9000287D3 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +396,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26C9FEF637007AAFB404448A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nearby-places/Pods-nearby-places-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DF116A5C8FE395A19507D94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nearby-places/Pods-nearby-places-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B63DF0CAD7AB9832938C32EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2CCA0CA21ED209E8000287D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CCA0CAC1ED209E9000287D3 /* ViewController.swift in Sources */,
+				2CCA0CEE1ED23CC4000287D3 /* NearbyPlacesInteractor.swift in Sources */,
+				2CCA0CE81ED23568000287D3 /* NearbyPlacesFactory.swift in Sources */,
+				2CA3F1FE1ED286FD00797C99 /* NearbyPlacesListViewRouterInterface.swift in Sources */,
 				2CCA0CAA1ED209E9000287D3 /* AppDelegate.swift in Sources */,
+				2CCA0CC81ED20B82000287D3 /* NearbyPlacesListViewInterface.swift in Sources */,
+				2CA3F1FB1ED286A200797C99 /* NearbyPlacesListViewRouter.swift in Sources */,
+				2CCA0CD31ED21B12000287D3 /* NearbyPlacesListViewCell.swift in Sources */,
+				2CCA0CF11ED23D89000287D3 /* NearbyPlacesInteractorInterface.swift in Sources */,
+				2CCA0CCF1ED20EED000287D3 /* NearbyPlacesListViewFactory.swift in Sources */,
+				2CCA0CCA1ED20E79000287D3 /* NearbyPlacesListViewPresenter.swift in Sources */,
+				2CCA0CE61ED23559000287D3 /* NearbyPlacesEntity.swift in Sources */,
+				2CCA0CE41ED23542000287D3 /* NearbyPlacesRepository.swift in Sources */,
+				2CCA0CDE1ED234DF000287D3 /* NearbyPlacesDataStore.swift in Sources */,
+				2CCA0CC51ED20B67000287D3 /* NearbyPlacesListView.swift in Sources */,
+				2CCA0CEB1ED23824000287D3 /* NearbyPlacesAppDefaults.swift in Sources */,
+				2CCA0CCD1ED20E8D000287D3 /* NearbyPlacesListViewPresenterInterface.swift in Sources */,
+				2CCA0CE21ED23508000287D3 /* NearbyPlacesDataStoreInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +584,7 @@
 		};
 		2CCA0CB91ED209E9000287D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0148072CCB51971D5DBFF0AA /* Pods-nearby-places.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JCEYC37BLA;
@@ -270,6 +598,7 @@
 		};
 		2CCA0CBA1ED209E9000287D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5F5F87A35555E87770DDCCF /* Pods-nearby-places.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JCEYC37BLA;
@@ -300,6 +629,7 @@
 				2CCA0CBA1ED209E9000287D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
