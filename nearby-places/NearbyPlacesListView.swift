@@ -31,15 +31,17 @@ class NearbyPlacesListView: UIViewController, NearbyPlacesListViewInterface {
         
         self.collectionView.delegate = self.presenter
         self.collectionView.dataSource = self.presenter
+        
+        self.presenter?.loadLocation()
     }
     
     // MARK: - Getters
     
-    func viewController() -> UIViewController {
+    internal func viewController() -> UIViewController {
         return self;
     }
     
-    func getCollectionView() -> UICollectionView {
+    internal func getCollectionView() -> UICollectionView {
         return self.collectionView;
     }
 

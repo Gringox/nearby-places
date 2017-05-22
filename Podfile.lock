@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.4.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SwiftLocation (2.0.7)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - SDWebImage (~> 3.8)
+  - SwiftLocation
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftLocation: 1fe2e15a5812e961496e82eeaca71d03e829e47a
+
+PODFILE CHECKSUM: bb3c6bb308572263852e485fc83f9efb4db914ec
+
+COCOAPODS: 1.1.1

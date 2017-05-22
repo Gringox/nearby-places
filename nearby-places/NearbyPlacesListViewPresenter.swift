@@ -7,17 +7,52 @@
 //
 
 import UIKit
+import CoreLocation
 
 class NearbyPlacesListViewPresenter: NSObject, NearbyPlacesListViewPresenterInterface {
     
     var view: NearbyPlacesListViewInterface?
+    var dataStore: NearbyPlacesDataStoreInterface?
+    var interactor: NearbyPlacesInteractorInterface?
     
     fileprivate let sectionInsets = UIEdgeInsets(top: 30.0,
                                                  left: 10.0,
                                                  bottom: 30.0,
                                                  right: 10.0)
     
-    fileprivate let itemsPerRow: CGFloat = 3
+    fileprivate let itemsPerRow: CGFloat = 2
+    
+    // MARK: - Services
+    
+    internal func loadLocation() {
+        
+        let success = {(location: CLLocation) -> () in
+            self.loadNearbyPlacesFor(location: location)
+        }
+        
+        let failure = {() -> () in
+            print("fallo")
+        }
+
+        self.interactor?.getCurrentLocation(successCallback: success,
+                                            failureCallback: failure)
+    }
+    
+
+    private func loadNearbyPlacesFor(location: CLLocation) {
+    
+        let success = {() -> () in
+            self.view?.getCollectionView().reloadData()
+        }
+        
+        let failure = {() -> () in
+            print("fallo")
+        }
+        
+        self.dataStore?.loadPlacesForLocation(location: location,
+                                              successCallback: success,
+                                              failureCallback: failure)
+    }
     
     // MARK: - Collection View DataSource
     
@@ -27,7 +62,7 @@ class NearbyPlacesListViewPresenter: NSObject, NearbyPlacesListViewPresenterInte
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return 20;
+        return (self.dataStore?.getNumberOfPlaces())!;
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -37,6 +72,10 @@ class NearbyPlacesListViewPresenter: NSObject, NearbyPlacesListViewPresenterInte
             withReuseIdentifier: String(describing: NearbyPlacesListViewCell.self),
             for: indexPath
         ) as! NearbyPlacesListViewCell
+        
+        let place = self.dataStore?.getPlaceAtIndex(index: indexPath.row)
+        
+        cell.initCellWithPlace(place: place!)
         
         return cell
     }

@@ -7,11 +7,25 @@
 //
 
 import UIKit
+import SDWebImage
 
 class NearbyPlacesListViewCell: UICollectionViewCell {
     
     @IBOutlet weak var nearbyPlaceImageView: UIImageView!
     @IBOutlet weak var nearbyPlaceLabel: UILabel!
+    
+    // MARK: - Initializer
+    
+    func initCellWithPlace(place: NearbyPlacesEntity) {
+        
+        self.nearbyPlaceLabel.text = place.name
+        
+        self.nearbyPlaceImageView
+            .sd_setImage(with: URL(string: place.photoUrl!),
+                         placeholderImage: UIImage(named: "place.png"))
+    }
+    
+    // MARK: - UI Stuff
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.alpha = 0.5;
